@@ -45,7 +45,9 @@ public class OperacionesAvanzadas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(OperacionesAvanzadas.this,MainActivity.class);
-                startActivity(intent);
+                //finish();
+                //startActivity(intent);
+               // System.exit(0);
             }
         });
 
