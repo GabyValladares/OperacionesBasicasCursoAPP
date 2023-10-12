@@ -68,6 +68,8 @@
         android:layout_marginTop="308dp"
         android:onClick="Ejemplo"
         android:text="+"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,6 +81,8 @@
         android:layout_marginTop="308dp"
         android:onClick="Ejemplo"
         android:text="/"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,6 +94,8 @@
         android:layout_marginTop="308dp"
         android:onClick="Ejemplo"
         android:text="*"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,6 +107,8 @@
         android:layout_marginTop="308dp"
         android:onClick="Ejemplo"
         android:text="-"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
