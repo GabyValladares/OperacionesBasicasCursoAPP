@@ -2,6 +2,7 @@ package com.ggvc.suma;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button Restar = (Button) findViewById(R.id.btnRestar);
         Button Multiplicar = (Button) findViewById(R.id.btnMultiplicar2);
         Button Dividir = (Button) findViewById(R.id.btnDividir);
+        Button Ir = (Button) findViewById(R.id.btnAvanzadas);
         TextView result = findViewById(R.id.txTResul);
 
         /*public void Sumar(View Sumar) {
@@ -30,7 +32,15 @@ public class MainActivity extends AppCompatActivity {
             double resultado = num1 + num2;
             result.setText(resultado + "");
         }*/
+        Ir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,OperacionesAvanzadas.class);
+                startActivity(intent);
+            }
 
+
+        });
         Sumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
