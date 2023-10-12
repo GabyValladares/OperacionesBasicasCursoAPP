@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txTN2"
-        android:layout_width="126dp"
-        android:layout_height="50dp"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
         android:text="Ingrese Número 2 :"
+        android:textColor="#F44336"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.136"
@@ -35,6 +38,8 @@
         android:layout_height="38dp"
         android:layout_marginTop="152dp"
         android:text="Ingrese Número 1:"
+        android:textColor="#F44336"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,21 +60,8 @@
         android:id="@+id/txTResul"
         android:layout_width="208dp"
         android:layout_height="43dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="392dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSumar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="308dp"
-        android:onClick="Ejemplo"
-        android:text="+"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="452dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,7 +70,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="316dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#86B1B6"
         android:onClick="Ejemplo"
         android:text="/"
         android:textSize="16sp"
@@ -91,7 +84,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="216dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#C2ABC6"
         android:onClick="Ejemplo"
         android:text="*"
         android:textSize="16sp"
@@ -104,13 +98,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#DCA2B5"
         android:onClick="Ejemplo"
         android:text="-"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="308dp"
+        android:backgroundTint="#AEC395"
+        android:onClick="Ejemplo"
+        android:text="+"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRestar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txTTitulo"
