@@ -7,12 +7,42 @@
     android:background="@drawable/fondo"
     tools:context=".OperacionesAvanzadas">
 
+    <EditText
+        android:id="@+id/txtPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="352dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="304dp"
+        android:text="Ingrese una potencia:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txtResult2"
         android:layout_width="240dp"
         android:layout_height="66dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#DDBC56"
+        android:textAlignment="center"
+        android:textColor="#232320"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,20 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnPotencia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="328dp"
-        android:backgroundTint="#808AC5"
-        android:onClick="Potencia"
-        android:text="^2"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/txtNum3"
         android:layout_width="wrap_content"
@@ -52,6 +68,7 @@
         android:layout_marginTop="228dp"
         android:ems="10"
         android:inputType="text"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
         android:layout_marginTop="180dp"
-        android:text="Ingrese un número:"
+        android:text="Ingrese una base:"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -76,6 +93,31 @@
         android:layout_marginTop="4dp"
         android:backgroundTint="#E45D8B"
         android:text="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="444dp"
+        android:backgroundTint="#BDB353"
+        android:text="N Potencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="444dp"
+        android:backgroundTint="#808AC5"
+        android:onClick="Potencia"
+        android:text="^2"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

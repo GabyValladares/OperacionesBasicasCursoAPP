@@ -17,7 +17,9 @@ public class OperacionesAvanzadas extends AppCompatActivity {
         setContentView(R.layout.activity_operaciones_avanzadas);
 
         EditText n1=findViewById(R.id.txtNum3);
+        EditText poten=findViewById(R.id.txtPotencia);
         Button potencia=findViewById(R.id.btnPotencia);
+        Button nPotencia=findViewById(R.id.btnNPotencia);
         Button regresar=findViewById(R.id.btnBack);
         TextView resultado=findViewById(R.id.txtResult2);
 
@@ -26,6 +28,15 @@ public class OperacionesAvanzadas extends AppCompatActivity {
             public void onClick(View v) {
                 double num1=Double.parseDouble(n1.getText().toString());
                 double resul=Math.pow(num1,2);
+                resultado.setText(resul+"");
+            }
+        });
+        nPotencia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double num1=Double.parseDouble(n1.getText().toString());
+                double num2=Double.parseDouble(poten.getText().toString());
+                double resul=Math.pow(num1,num2);
                 resultado.setText(resul+"");
             }
         });
