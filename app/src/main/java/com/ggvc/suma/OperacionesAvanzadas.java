@@ -21,6 +21,7 @@ public class OperacionesAvanzadas extends AppCompatActivity {
         Button potencia=findViewById(R.id.btnPotencia);
         Button nPotencia=findViewById(R.id.btnNPotencia);
         Button regresar=findViewById(R.id.btnBack);
+        Button raizCuadrada=findViewById(R.id.btnRaiz);
         TextView resultado=findViewById(R.id.txtResult2);
 
         potencia.setOnClickListener(new View.OnClickListener() {
@@ -41,12 +42,22 @@ public class OperacionesAvanzadas extends AppCompatActivity {
             }
         });
 
+        raizCuadrada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double num1=Double.parseDouble(n1.getText().toString());
+                double num2=Double.parseDouble(poten.getText().toString());
+                double resul=(Math.pow(num1,2)+2*num1*num2+Math.pow(num2,2));
+                resultado.setText(resul+"");
+            }
+        });
+
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(OperacionesAvanzadas.this,MainActivity.class);
                 //finish();
-                //startActivity(intent);
+                startActivity(intent);
                // System.exit(0);
             }
         });
